@@ -1,0 +1,182 @@
+html {
+    height: 100%;
+}
+
+.menuBar {
+    height: 110px;
+    width: 220px;
+    min-width: 102px;
+    margin: 100px auto 0;
+    text-align: center;
+    flex-direction: row;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul > li {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+    text-align: center;
+}
+
+ul > li:hover > ol {
+    display: flex;
+}
+
+#tasksToDo:hover {
+    background-color: rgba(206, 181, 31, 0.68);
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+}
+
+#doneTasks:hover {
+    background-color: rgba(103, 39, 6, 0.68);
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+}
+
+/*#otherItems:hover {*/
+/*    background-color: rgba(0, 123, 195, 0.68);*/
+/*    border: 3px solid #ffffff;*/
+/*    border-radius: 20px;*/
+/*}*/
+
+#addItem:hover {
+    background-color: rgba(10, 195, 0, 0.68);
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+}
+
+ul > li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+ol > li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin-top: 2px;
+    border: 1px solid black;
+    background-color: black;
+}
+
+ul > li > ol {
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    display: none;
+    list-style-type: none;
+    position: relative;
+}
+
+.container {
+    min-width: 320px;
+    width: 500px;
+    background-color: #000000;
+    margin: 10px auto;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 !important;
+}
+
+.table {
+    width: 1000px;
+    min-width: 320px;
+    margin: auto;
+    border-radius: 10px;
+    border: #000000;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.91);
+    overflow: hidden;
+}
+
+thead tr:first-child {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: left;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    margin: 1px 0;
+    border-right: 1px solid #dddddd;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+.homeSiteBar {
+    margin-top: auto;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: #000000;
+}
+
+
+.homeSiteIcon {
+    width: 100px;
+    margin: 3px auto 0 auto;
+    background-color: #000000;
+}
+
+.form-control:focus {
+    border-color: #ffffff;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+.form-select:focus {
+    border-color: #ffffff;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+.form-select option:hover {
+    background-color: white;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    color: black;
+}
+
+.btn:hover {
+    background-color: rgba(10, 195, 0, 0.91);
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.col-md-4 {
+    width: 100%;
+}
+
+#isDoneButton:hover {
+    background-color: green;
+}
